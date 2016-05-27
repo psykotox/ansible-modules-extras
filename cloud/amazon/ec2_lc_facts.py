@@ -77,8 +77,7 @@ EXAMPLES = '''
 
 RETURN = '''
 block_device_mapping:
-    description: Block device mapping 
-    for the instances of launch configuration
+    description: Block device mapping for the instances of launch configuration
     type: list of block devices
     sample: "[{
         'device_name': '/dev/xvda':,
