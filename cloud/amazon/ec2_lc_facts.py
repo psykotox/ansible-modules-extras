@@ -93,7 +93,7 @@ def list_launch_configs(connection, module):
 
     try:
         launch_configs = connection.describe_launch_configurations(LaunchConfigurationNames=launch_config_name)
-    except ClientError, e:
+    except ClientError as e:
         module.fail_json(msg=e.message)
 
     snaked_launch_configs = []
