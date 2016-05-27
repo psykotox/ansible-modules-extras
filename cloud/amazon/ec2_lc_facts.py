@@ -136,7 +136,7 @@ security_groups:
     description: Security groups to associated
     type: list
     sample: "[
-        "web"                        
+        'web'                        
     ]"
 user_data:
     description: User data available
