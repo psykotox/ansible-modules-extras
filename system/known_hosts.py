@@ -50,6 +50,7 @@ options:
       - Hash the hostname in the known_hosts file
     required: no
     default: no
+    version_added: "2.3"
   state:
     description:
       - I(present) to add the host key, I(absent) to remove it.
