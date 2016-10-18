@@ -224,7 +224,7 @@ def search_for_host_key(module,host,key,hash_host,path,sshkeygen):
         return False, False, None, key #host not found, no other errors
     if rc!=0: #something went wrong
         module.fail_json(msg="ssh-keygen failed (rc=%d,stdout='%s',stderr='%s')" % (rc,stdout,stderr))
-        
+
     #If user supplied no key, we don't want to try and replace anything with it
     if key is None:
         return True, False, None, key
